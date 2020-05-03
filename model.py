@@ -19,4 +19,4 @@ class Batch:
     self.available_quantity = qty
 
   def allocate(self, line: OrderLine):
-    self.available_quantity
+    self.available_quantity -= line.qty
